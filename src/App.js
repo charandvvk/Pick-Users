@@ -109,7 +109,7 @@ function App() {
                                     : undefined
                             }
                         >
-                            <img src={user.img} />
+                            <img src={user.img} alt={user.name} />
                             <span>{user.name}</span>
                             <RxCross1
                                 onClick={() => removeClickHandler(user.name)}
@@ -133,7 +133,7 @@ function App() {
                                     onClick={() => pickClickHandler(user)}
                                     key={index}
                                 >
-                                    <img src={user.img} />
+                                    <img src={user.img} alt={user.name} />
                                     <div>{user.name}</div>
                                     <div className="email">{user.email}</div>
                                 </li>
